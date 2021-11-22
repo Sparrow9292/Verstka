@@ -1,0 +1,53 @@
+.breadcramb
+    background: #F8F3F4
+    height: 148px
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+    &__h3
+        font-style: normal
+        font-weight: normal
+        font-size: 24px
+        line-height: 29px
+        color: $selectColor
+
+    &__nav
+        display: flex
+        list-style-type: none
+
+    &__li
+        &:not(:last-child):after //поствить в конце каждого слова слеш кроме последнего слова вконце
+            content: "/"
+            margin-left: 8px
+            margin-right: 8px
+        &:last-child a  //выделить последнее слово
+            font-weight:bold
+            color: $selectColor
+
+
+    &__links
+        font-style: normal
+        font-weight: 300
+        font-size: 14px
+        line-height: 17px
+        text-decoration: none
+        color: #636363
+        &:hover //эффект наведения
+            color: $selectColor
+
+.filter-sort
+    padding-top: 48px 
+    padding-bottom: 16px
+
+.filter
+    &__summary
+        font-weight: 600
+        font-size: 14px
+        line-height: 17px
+        color: #000000
+        padding-right: 11px
+
+.sort
+
+
