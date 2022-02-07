@@ -11,13 +11,13 @@
     rel="stylesheet">
     <script src="https://kit.fontawesome.com/158cc1f65f.js" crossorigin="anonymous"></script>
 
-    <title>Интернет-магазин - корзина</title>
+    <title>Интернет-магазин - регистрация</title>
     
 </head>
 
 <body>
     <header class="header">
-        <h1 class="visually-hidden">Корзина</h1>
+        <h1 class="visually-hidden">Регистрация</h1>
         <div class="container header__wrapper">
             <div class="header__logo_wrapper">
                 <a href="index.html"><img class="header__logo" src="img/logo.svg" width="44" height="38"
@@ -104,68 +104,49 @@
     </header>
     <main class="main">
         <section class="heading">
-            <h2 class="heading__heading container">shopping cart</h2>
+            <h2 class="heading__heading container">registration</h2>
         </section>
-        <section class="cart container">
-                <h2 class="visually-hidden">корзина</h2>
-                <div class="cart__wrapper">
-                <ul class="cart__list">
-                    <li class="cart__list-item">
-                        <img src="img/cart_man_in_hoody.jpg" alt="Man in hoody" width="262" height="306" class="cart__list-img">
-                        <div class="cart__list-wrapper">
-                            <h3 class="cart__list-heading">mango people t-shirt</h3>
-                            <p class="cart__list-text">Price: <span class="cart__list-pink">$300</span></p>
-                            <p class="cart__list-text">Color: Red</p>
-                            <p class="cart__list-text">Size: Xl</p>
-                            <div class="cart__list-subwrapper">
-                                <label class="cart__list-text">Quantity:</label>
-                                <input type="text" class="cart__list-qty" placeholder="2">
-                            </div>
-                        </div>
-                    </li>
-                    <li class="cart__list-item">
-                        <img src="img/cart_man_in_red.jpg" alt="Man in red" width="262" height="306" class="cart__list-img">
-                        <div class="cart__list-wrapper">
-                            <h3 class="cart__list-heading">mango people t-shirt</h3>
-                            <p class="cart__list-text">Price: <span class="cart__list_item_pink">$300</span></p>
-                            <p class="cart__list-text">Color: Red</p>
-                            <p class="cart__list-text">Size: Xl</p>
-                            <div class="cart__list-subwrapper">
-                                <label class="cart__list-text">Quantity:</label>
-                                <input type="text" class="cart__list-qty" placeholder="2">
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-                    <ul class="cart__list-buttons">
-                        <li><button type="reset" class="cart__list-button">clear shopping cart</button></li>
-                        <li><button type="button" class="cart__list-button">continue shopping</button></li>
+        <section class="registration">
+            <div class="registration__content_wrapper container">
+                <form action="#" method="post" class="registration__form">
+                    <fieldset class="registration__fieldset">
+                        <legend class="registration__form_name_legend">your name</legend>
+                        <input type="text" class="registration__form_input" id="name" placeholder="First name">
+                        <input type="text" class="registration__form_input" id="surname" placeholder="Last name">
+                    </fieldset>
+                    <fieldset class="registration__fieldset_radio">
+                        <legend class="visually-hidden">your gender</legend>
+                        <input type="radio" name="gender" id="male" class="registration__form_radio">
+                        <label for="male" class="registration__form_gender">male</label>
+
+                        <input type="radio" name="gender" id="female" class="registration__form_radio">
+                        <label for="female" class="registration__form_gender">female</label>
+                    </fieldset>
+                    <fieldset class="registration__fieldset">
+                        <legend class="registration__form_login_legend">login details</legend>
+                        <input type="email" class="registration__form_input" id="email" placeholder="Email">
+                        <input type="password" class="registration__form_input" id="password" placeholder="Passsword">
+                        <p class="registration__form_text">Please use 8 or more characters, with at least 1 number and a
+                            mixture of uppercase and lowercase letters</p>
+                    </fieldset>
+                    <button type="submit" class="registration__form_submit">join now
+                    </button>
+                </form>
+                <div class="registration__text">
+                    <h3 class="registration__text_heading">loyalty has its perks</h3>
+                    <p class="registration__text_subheading">Get in on the loyalty program where you can earn points and
+                        unlock serious perks. Starting with these as soon as you join:</p>
+                    <ul class="registration__list">
+                        <li class="registration__list_item">15% off welcome offer</li>
+                        <li class="registration__list_item">Free shipping, returns and exchanges on all orders</li>
+                        <li class="registration__list_item">$10 off a purchase on your birthday</li>
+                        <li class="registration__list_item">Early access to products</li>
+                        <li class="registration__list_item">Exclusive offers & rewards</li>
                     </ul>
-                </div>                  
-                <div class="cart__shipping_wrapper">
-                    <form action="post" class="cart__shipping">
-                        <h3 class="cart__shipping_heading">shipping adress</h3>
-                        <label for="city" class="visually-hidden">City</label>
-                        <input type="text" id="city" class="cart__shipping_input" placeholder="Bangladesh">
-                        <label for="state" class="visually-hidden">State</label>
-                        <input type="text" id="state" class="cart__shipping_input" placeholder="State">
-                        <label for="zip" class="visually-hidden">Postcode/zip</label>
-                        <input type="text" id="zip" class="cart__shipping_input" placeholder="Postcode / Zip">
-                        <button type="submit" class="cart__shipping_button">get a quote</button>
-                    </form>
-                    <div class="cart__total">
-                        <div class="cart__total_text_wrapper">
-                            <p class="cart__subtotal_text">sub total $900</p>
-                            <p class="cart__grandtotal_text">grand total $900</p>
-                        </div>
-                        <div class="cart__total_checkout_wrapper">
-                            <hr class="cart__total_line">
-                            <button type="submit" class="cart__total_checkout">proceed to checkout</button>
-                        </div>
-                    </div>
                 </div>
-            <div class="main__overlay"></div>
+            </div>
         </section>
+        <div class="main__overlay"></div>
     </main>
     <footer>
         <section class="subscribe">
@@ -182,14 +163,14 @@
                         <h4 class="subscribe__list_item_subheading">for our newletter and promotion</h4>
                         <div class="subscribe__list_input_wrapper">
                             <input class="subscribe__list_item_input" type="text" placeholder="enter your email">
-                            <button type="submit" class="subscribe__list_item_button">subscribe</button>
+                            <button type="button" class="subscribe__list_item_button">subscribe</button>
                         </div>
                     </li>
                 </ul>
             </div>
         </section>
         <section class="copyright">
-            <h2 class="visually_hidden">Copyright</h2>
+            <h2 class="visually-hidden">Copyright</h2>
             <ul class="copyright__list container">
                 <li>
                     <p class="copyright__list_text">&copy; 2021 Brand All Rights Reserved.</p>
